@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "name": "代码风格",
+      "description": "确保代码风格一致性",
+      "patterns": [
+        {
+          "pattern": "使用单引号而不是双引号",
+          "message": "根据项目 Prettier 配置，请使用单引号"
+        },
+        {
+          "pattern": "不要使用分号",
+          "message": "根据项目 Prettier 配置，不应使用分号"
+        },
+        {
+          "pattern": "行宽不超过75个字符",
+          "message": "根据项目 Prettier 配置，行宽应控制在75个字符以内"
+        },
+        {
+          "pattern": "使用2个空格缩进",
+          "message": "根据项目 EditorConfig 配置，应使用2个空格缩进"
+        }
+      ]
+    },
+    {
+      "name": "Vue 组件规范",
+      "description": "Vue 组件开发规范",
+      "patterns": [
+        {
+          "pattern": "组件名称使用 PascalCase",
+          "message": "Vue 组件名称应使用 PascalCase 命名方式"
+        },
+        {
+          "pattern": "组件属性顺序",
+          "message": "组件属性顺序应为：name, components, props, data, computed, watch, lifecycle methods, methods"
+        },
+        {
+          "pattern": "使用 Composition API",
+          "message": "优先使用 Composition API 而非 Options API"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript 规范",
+      "description": "JavaScript 开发规范",
+      "patterns": [
+        {
+          "pattern": "使用 const 和 let",
+          "message": "优先使用 const，其次使用 let，避免使用 var"
+        },
+        {
+          "pattern": "使用箭头函数",
+          "message": "优先使用箭头函数，特别是在回调函数中"
+        },
+        {
+          "pattern": "使用解构赋值",
+          "message": "使用对象和数组解构赋值简化代码"
+        },
+        {
+          "pattern": "使用模板字符串",
+          "message": "使用模板字符串代替字符串拼接"
+        },
+        {
+          "pattern": "使用 Promise 或 async/await",
+          "message": "使用 Promise 或 async/await 处理异步操作，避免回调地狱"
+        },
+        {
+          "pattern": "使用可选链和空值合并",
+          "message": "使用可选链(?.)和空值合并(??)操作符简化条件判断"
+        },
+        {
+          "pattern": "使用ES模块语法",
+          "message": "使用ES模块语法(import/export)而非CommonJS(require/module.exports)"
+        },
+        {
+          "pattern": "使用数组和对象方法",
+          "message": "优先使用map、filter、reduce等数组方法，避免使用for循环"
+        },
+        {
+          "pattern": "避免使用TypeScript",
+          "message": "项目仅使用JavaScript，不使用TypeScript"
+        }
+      ]
+    },
+    {
+      "name": "文档规范",
+      "description": "文档编写规范",
+      "patterns": [
+        {
+          "pattern": "使用 Markdown 格式",
+          "message": "文档应使用 Markdown 格式编写"
+        },
+        {
+          "pattern": "文档结构清晰",
+          "message": "文档应有清晰的标题层级结构"
+        },
+        {
+          "pattern": "代码示例应有注释",
+          "message": "文档中的代码示例应有必要的注释说明"
+        }
+      ]
+    },
+    {
+      "name": "Git 提交规范",
+      "description": "Git 提交信息规范",
+      "patterns": [
+        {
+          "pattern": "遵循 Conventional Commits",
+          "message": "提交信息应遵循 Conventional Commits 规范，如 feat:, fix:, docs:, style:, refactor:, perf:, test:, build:, ci:, chore:, revert:"
+        },
+        {
+          "pattern": "提交信息简洁明了",
+          "message": "提交信息应简洁明了，不超过50个字符"
+        },
+        {
+          "pattern": "提交信息使用中文",
+          "message": "提交信息应使用中文，保持团队沟通一致性"
+        }
+      ]
+    },
+    {
+      "name": "包管理规范",
+      "description": "包管理和依赖规范",
+      "patterns": [
+        {
+          "pattern": "使用 pnpm",
+          "message": "项目使用 pnpm 作为包管理器，不要使用 npm 或 yarn"
+        },
+        {
+          "pattern": "指定依赖版本",
+          "message": "package.json 中的依赖应指定确切版本或合理的版本范围"
+        },
+        {
+          "pattern": "避免重复依赖",
+          "message": "避免在不同包中重复安装相同依赖，利用 pnpm 的依赖提升"
+        },
+        {
+          "pattern": "使用pnpm工作空间",
+          "message": "在Monorepo项目中使用pnpm工作空间(workspaces)管理多包依赖"
+        },
+        {
+          "pattern": "使用pnpm-lock.yaml",
+          "message": "确保提交pnpm-lock.yaml文件以锁定依赖版本"
+        },
+        {
+          "pattern": "使用pnpm脚本",
+          "message": "在package.json中使用scripts定义常用命令，通过pnpm run执行"
+        }
+      ]
+    },
+    {
+      "name": "构建和发布规范",
+      "description": "构建和发布流程规范",
+      "patterns": [
+        {
+          "pattern": "使用 Vite 构建",
+          "message": "项目使用 Vite 作为构建工具"
+        },
+        {
+          "pattern": "生成 sourcemap",
+          "message": "构建时应生成 sourcemap 以便调试"
+        },
+        {
+          "pattern": "版本号遵循语义化版本",
+          "message": "版本号应遵循语义化版本规范 (SemVer)"
+        }
+      ]
+    },
+    {
+      "name": "项目结构规范",
+      "description": "项目目录结构规范",
+      "patterns": [
+        {
+          "pattern": "Monorepo 结构",
+          "message": "项目使用 Monorepo 结构，新功能应考虑是放在现有包中还是创建新包"
+        },
+        {
+          "pattern": "文档放在 docs 目录",
+          "message": "项目文档应放在 docs 目录下，并按照功能模块组织"
+        },
+        {
+          "pattern": "共享代码放在公共目录",
+          "message": "多个包共享的代码应放在公共目录或提取为独立包"
+        }
+      ]
+    },
+    {
+      "name": "项目工具语言规范",
+      "description": "项目使用的工具和语言规范",
+      "patterns": [
+        {
+          "pattern": "仅使用JavaScript",
+          "message": "项目仅使用JavaScript进行开发，不使用TypeScript或其他语言"
+        },
+        {
+          "pattern": "使用ESLint",
+          "message": "使用ESLint进行代码质量检查，遵循项目中的.eslintrc配置"
+        },
+        {
+          "pattern": "使用Prettier",
+          "message": "使用Prettier进行代码格式化，遵循项目中的.prettierrc配置"
+        },
+        {
+          "pattern": "使用Jest测试",
+          "message": "使用Jest进行单元测试和集成测试"
+        },
+        {
+          "pattern": "使用Vite构建",
+          "message": "使用Vite作为构建和开发工具，不使用webpack或其他构建工具"
+        },
+        {
+          "pattern": "使用Node.js LTS版本",
+          "message": "开发环境使用Node.js LTS版本，确保兼容性和稳定性"
+        }
+      ]
+    }
+  ]
+} 

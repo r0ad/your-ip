@@ -43,7 +43,7 @@ const viteConfig = {
 
 // 基础配置
 const baseConfig = {
-  title: 'Ur IP',
+  title: 'Your IP',
   description: '系统化IP打造指南',
   srcDir: '',
   outDir: '../docs-dist',

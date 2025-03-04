@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a90e2" />
+      <stop offset="100%" stop-color="#8e44ad" />
+    </linearGradient>
+    <!-- 光晕效果 -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="500" height="500" rx="50" ry="50" fill="url(#bg-gradient)" />
+  
+  <!-- 装饰圆形 -->
+  <circle cx="100" cy="100" r="150" fill="rgba(255, 255, 255, 0.1)" />
+  <circle cx="400" cy="400" r="150" fill="rgba(255, 255, 255, 0.1)" />
+  
+  <!-- 图标 -->
+  <text x="250" y="180" font-family="Arial, sans-serif" font-size="60" text-anchor="middle" fill="white" filter="url(#glow)">🚀</text>
+  
+  <!-- 主标题 -->
+  <text x="250" y="260" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="white" filter="url(#glow)">Your IP</text>
+  
+  <!-- 副标题 -->
+  <text x="250" y="320" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="white">从定位到变现的完整闭环</text>
+  
+  <!-- 四个核心元素 -->
+  <g font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">
+    <text x="125" y="380">🎯 定位</text>
+    <text x="250" y="380">✍️ 创作</text>
+    <text x="375" y="380">📈 运营</text>
+    <text x="250" y="420">💰 变现</text>
+  </g>
+</svg> 

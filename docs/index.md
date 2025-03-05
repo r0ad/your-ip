@@ -2,6 +2,29 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
+# SEO优化元数据
+title: 创建独属于你的IP - 系统化IP打造指南
+description: 从0到1构建个人品牌，实现从定位到变现的完整闭环，掌握精准定位、内容创作、账号运营和商业变现的系统方法
+head:
+  - - meta
+    - name: keywords
+      content: 个人IP,个人品牌,IP打造,内容创作,自媒体运营,商业变现,KOL,网络红人,个人影响力
+  - - meta
+    - name: author
+      content: r0ad
+  - - meta
+    - property: og:title
+      content: 创建独属于你的IP - 系统化IP打造指南
+  - - meta
+    - property: og:description
+      content: 从0到1构建个人品牌，实现从定位到变现的完整闭环，掌握精准定位、内容创作、账号运营和商业变现的系统方法
+  - - meta
+    - property: og:image
+      content: /og-image.jpg
+  - - meta
+    - property: og:url
+      content: https://your-ip.r0ad.cc/
+
 hero:
   name: "创建独属于你的IP"
   text: "系统化IP打造指南"

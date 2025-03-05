@@ -9,3 +9,183 @@
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
+
+/* 自定义CSS，优化SEO和用户体验 */
+
+/* 确保文本可读性 */
+:root {
+  --vp-c-text-1: rgba(60, 60, 60, 1);
+  --vp-c-text-2: rgba(60, 60, 60, 0.85);
+  --vp-font-family-base: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --vp-font-family-mono: 'Source Code Pro', monospace;
+}
+
+/* 优化标题结构，确保层级清晰 */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* 优化链接样式，提高可访问性 */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 优化移动端响应式布局 */
+@media (max-width: 768px) {
+  .VPHero .container {
+    padding: 0 1.5rem;
+  }
+  
+  .VPFeatures .container {
+    padding: 0 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* 优化图片加载 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 添加图片懒加载支持 */
+img.lazy {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img.lazy.loaded {
+  opacity: 1;
+}
+
+/* 优化代码块样式 */
+pre {
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+code {
+  font-family: var(--vp-font-family-mono);
+}
+
+/* 优化表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  overflow-x: auto;
+  display: block;
+}
+
+th, td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.6rem 1rem;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* 优化引用块样式 */
+blockquote {
+  border-left: 4px solid var(--vp-c-brand);
+  padding-left: 1rem;
+  color: var(--vp-c-text-2);
+  margin: 1rem 0;
+}
+
+/* 优化列表样式 */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* 添加打印优化 */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter {
+    display: none;
+  }
+  
+  .VPContent {
+    padding: 0 !important;
+  }
+  
+  a {
+    color: var(--vp-c-text-1) !important;
+    text-decoration: none !important;
+  }
+  
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+    color: var(--vp-c-text-2);
+  }
+}
+
+/* 添加结构化数据标记的样式支持 */
+.schema-faq-question {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.schema-faq-answer {
+  margin-bottom: 1.5rem;
+}
+
+/* FAQ页面CTA按钮样式 */
+.cta-container {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  text-decoration: none;
+}

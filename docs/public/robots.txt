@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# 禁止爬取特定目录
+Disallow: /assets/
+Disallow: /.vitepress/
+Disallow: /node_modules/
+
+# 允许所有搜索引擎访问站点地图
+Sitemap: https://your-ip.r0ad.cc/sitemap.xml
+
+# 百度爬虫特殊规则
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+# 谷歌爬虫特殊规则
+User-agent: Googlebot
+Allow: /
+
+# 必应爬虫特殊规则
+User-agent: Bingbot
+Allow: / 

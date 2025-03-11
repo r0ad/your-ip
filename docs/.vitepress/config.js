@@ -195,7 +195,7 @@ const baseConfig = {
 
 // 使用 withMermaidRenderer 增强配置
 const enhancedConfig = withMermaidRenderer(baseConfig, {
-  useCDN: true,
+  useCDN: false,
   cdnURL: 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js',
   inlineCSS: true,
   mermaid: {
